@@ -12,18 +12,26 @@ const DomesticCalculator = () => {
     <div className="calc-domestic">
       <h2>국내 판매가 계산기</h2>
 
-      <input
-        type="number"
-        placeholder="희망 순이익 입력 (원)"
-        value={profit}
-        onChange={(e) => setProfit(e.target.value)}
-      />
-      <input
-        type="number"
-        placeholder="희망 순이익률 입력 (%)"
-        value={profitRate}
-        onChange={(e) => setProfitRate(e.target.value)}
-      />
+      <div className="calc-input-wrap">
+        <div className="calc-input-group">
+          <label htmlFor="profit">원가 (₩)</label>
+          <input
+            type="number"
+            placeholder="희망 순이익 입력 (원)"
+            value={profit}
+            onChange={(e) => setProfit(e.target.value)}
+          />
+        </div>
+        <div className="calc-input-group">
+          <label htmlFor="profit">희망 순이익률 (%)</label>
+          <input
+            type="number"
+            placeholder="희망 순이익률 입력 (%)"
+            value={profitRate}
+            onChange={(e) => setProfitRate(e.target.value)}
+          />
+      </div>
+      </div>
 
       <table className="calc-table">
         <thead>
