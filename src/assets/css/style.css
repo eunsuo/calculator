@@ -1,0 +1,67 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center; /* 가로 중앙 */
+  align-items: center;     /* 세로 중앙 */
+  height: 100vh;           /* 화면 전체 높이 */
+}
+
+.calc-tabs { width: 100%; }
+.calc-tab-buttons { display: flex; justify-content: center; margin: 1rem; }
+.calc-tab-buttons button { padding: 10px 20px; cursor: pointer; border: none; }
+.calc-tab-buttons button.active { font-weight: bold; border-bottom: 2px solid #000; }
+.calc-tab-content { padding: 20px; border-top: 1px solid #ccc; }
+
+.calc-domestic { padding: 2rem; text-align: center; }
+.calc-overseas { padding: 2rem; text-align: center; }
+
+.calc-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+.calc-table th, .calc-table td { border: 1px solid #ccc; padding: 10px; }
+.calc-table th { background-color: #f9f9f9; }
+
+
+.calc-input-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  max-width: 50%;
+}
+
+.calc-input-group {
+  width: 50%;
+  max-width: none;
+  text-align: left;
+}
+
+.calc-input-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.calc-overseas input,
+.calc-domestic input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.calc-content-wrapper {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+
+.calc-left-table {
+  width: 60%;
+}
+
+.calc-right-table {
+  width: 40%;
+}
